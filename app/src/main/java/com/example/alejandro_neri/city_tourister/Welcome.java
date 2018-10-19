@@ -5,6 +5,7 @@ package com.example.alejandro_neri.city_tourister;
 
 public class Welcome extends AppCompatActivity {
     // comentario  6
+    //noteenojesneri.jpg
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
