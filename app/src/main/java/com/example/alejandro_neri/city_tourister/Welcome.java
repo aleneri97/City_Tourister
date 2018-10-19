@@ -4,7 +4,7 @@ package com.example.alejandro_neri.city_tourister;
         import android.os.Bundle;
 
 public class Welcome extends AppCompatActivity {
-    // comentario  2
+    // comentario  5
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
