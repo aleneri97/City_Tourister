@@ -1,11 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">City Tourister</string>
-    <string name="description_wizard">Para vivir la experiencia al máximo, necesitamos que autorices el uso de los servicios de ubicación y de notificaciones.</string>
+    <string name="description_wizard">To provide you the best experience we need you to allow some services.</string>
     <string name="permission_location_title">Ubicación</string>
     <string name="permission_location_description">Necesitaremos tu ubicación para darte recomendaciones basadas en tu posición.</string>
     <string name="permission_notification_title">Notificaciones</string>
     <string name="permission_notification_description">Ocasionalmente te mandaremos avisos para avisarte de cosas importantes.</string>
-    <string name="permission_allow">Permitir</string>
-    <string name="permission_ready">Listo</string>
-    <string name="permission_skip">Saltar</string>
+    <string name="permission_allow">Allow</string>
+    <string name="permission_ready">Ready</string>
+    <string name="permission_skip">Skip</string>
 </resources>
