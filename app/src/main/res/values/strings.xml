@@ -8,4 +8,16 @@
     <string name="permission_allow">Permitir</string>
     <string name="permission_ready">Listo</string>
     <string name="permission_skip">Saltar</string>
+    <string name="title_activity_inicio">InicioActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Equipo Naranja</string>
+    <string name="nav_header_subtitle">equipo.naranja@icloud.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Herramientas</string>
+    <string name="boton_inicio">Inicio</string>
+    <string name="boton_mapa">Mapa</string>
+    <string name="boton_rutas">Rutas</string>
+    <string name="boton_boletos">Boletos</string>
+
 </resources>
