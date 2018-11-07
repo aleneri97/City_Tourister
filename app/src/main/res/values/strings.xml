@@ -8,7 +8,7 @@
     <string name="permission_allow">Permitir</string>
     <string name="permission_ready">Listo</string>
     <string name="permission_skip">Saltar</string>
-    <string name="title_activity_inicio">InicioActivity</string>
+    <string name="title_activity_inicio">HomeActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Equipo Naranja</string>
