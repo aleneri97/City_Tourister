@@ -19,5 +19,6 @@
     <string name="boton_mapa">Mapa</string>
     <string name="boton_rutas">Rutas</string>
     <string name="boton_boletos">Boletos</string>
+    <string name="title_activity_map">Map</string>
 
 </resources>
