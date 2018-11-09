@@ -51,6 +51,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(galeria_catedral).title("Galería de tesoros de la catedral").icon(BitmapDescriptorFactory.fromResource(R.drawable.puntos_de_interes)));
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(catedral,16));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
     }
 
     //Conexion de screen con botones

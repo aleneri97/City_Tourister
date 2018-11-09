@@ -50,6 +50,7 @@ public class RoutesActivity extends AppCompatActivity implements OnMapReadyCallb
         mMap.addMarker(new MarkerOptions().position(zocalo).title("Zócalo").icon(BitmapDescriptorFactory.fromResource(R.drawable.paradas)));
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(zocalo,16));
+        mMap.getUiSettings().setZoomControlsEnabled(true);
     }
 
     //Conexion de screen con botones
