@@ -19,38 +19,42 @@
 
         <Button
             android:id="@+id/btn_Inicio"
+            android:onClick="ViewHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:text="@string/boton_inicio"
+            android:text="@string/button_home"
             android:textColor="@color/editTextColorWhite" />
 
         <Button
             android:id="@+id/btn_Mapa"
+            android:onClick="ViewMap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:text="@string/boton_mapa"
+            android:text="@string/button_map"
             android:textColor="@color/editTextColorWhite" />
 
         <Button
             android:id="@+id/btn_Rutas"
+            android:onClick="ViewRoutes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:text="@string/boton_rutas"
+            android:text="@string/button_routes"
             android:textColor="@color/editTextColorWhite" />
 
         <Button
             android:id="@+id/btn_Boletos"
+            android:onClick="ViewTickets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:text="@string/boton_boletos"
+            android:text="@string/button_tickets"
             android:textColor="@color/editTextColorWhite" />
     </LinearLayout>
         
@@ -75,6 +79,28 @@
             app:strokeColor="@color/colorPrimary"
             app:strokeWidth="1dp" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="196dp"
+        app:srcCompat="@drawable/registra_pulsera" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="54dp"
+        app:srcCompat="@drawable/no_boleto" />
 
 
 </RelativeLayout>

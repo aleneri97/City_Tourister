@@ -43,7 +43,14 @@
 
         <activity
             android:name=".MapActivity"
-            android:label="@string/title_activity_map"></activity>
+            android:label="Mapa"/>
+        <activity
+            android:name=".RoutesActivity"
+            android:label="Rutas"/>
+        <activity
+            android:name=".TicketsActivity"
+            android:label="Boletos">
+        </activity>
     </application>
 
 </manifest>

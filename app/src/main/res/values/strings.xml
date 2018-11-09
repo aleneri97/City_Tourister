@@ -15,10 +15,11 @@
     <string name="nav_header_subtitle">equipo.naranja@icloud.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Herramientas</string>
-    <string name="boton_inicio">Inicio</string>
-    <string name="boton_mapa">Mapa</string>
-    <string name="boton_rutas">Rutas</string>
-    <string name="boton_boletos">Boletos</string>
-    <string name="title_activity_map">Map</string>
-
+    <string name="button_home">Inicio</string>
+    <string name="button_map">Mapa</string>
+    <string name="button_routes">Rutas</string>
+    <string name="button_tickets">Boletos</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_routes">RoutesActivity</string>
+    <string name="title_activity_tickets">TicketsActivity</string>
 </resources>
