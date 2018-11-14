@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.alejandro_neri.city_tourister">
 
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,18 +19,43 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".InicioActivity"
+            android:name=".HomeActivity"
             android:label="Inicio">
+
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="Prueba"
+            android:theme="@style/AppTheme" />
+
+        <activity android:name=".WizardActivity"></activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
         <activity
-            android:name=".Welcome"
-            android:label="@string/title_activity_inicio"
-            android:theme="@style/AppTheme"></activity>
+            android:name=".MapActivity"
+            android:label="Mapa"/>
+        <activity
+            android:name=".RoutesActivity"
+            android:label="Rutas"/>
+        <activity
+            android:name=".TicketsActivity"
+            android:label="Boletos">
+        </activity>
+        <activity android:name=".RegisterFirstActivity"></activity>
+        <activity android:name=".RegisterSecondActivity"></activity>
     </application>
 
 </manifest>
