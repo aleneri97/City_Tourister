@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import java.util.ArrayList;
+
 public class TicketsActivity extends AppCompatActivity {
 
     @Override
@@ -17,6 +19,7 @@ public class TicketsActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle("Boletos");
+
     }
 
     //Conexion de screen con botones

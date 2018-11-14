@@ -41,6 +41,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        //Puebla fascinante
         // Catedral
         LatLng catedral = new LatLng(19.0429, -98.1983);
         mMap.addMarker(new MarkerOptions().position(catedral).title("Catedral de Puebla").icon(BitmapDescriptorFactory.fromResource(R.drawable.recomendados)).snippet("La Catedral Basílica de Puebla, es uno de las más importantes inmuebles del centro histórico declarado patrimonio de la humanidad."));
@@ -105,6 +106,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         LatLng monumento_zaragoza = new LatLng(19.0605, -98.1846);
         mMap.addMarker(new MarkerOptions().position(monumento_zaragoza).title("Monumento a Zaragoza").icon(BitmapDescriptorFactory.fromResource(R.drawable.puntos_de_interes)).snippet("Es un mausoleo donde de descansan los restos de uno de los generales más importantes que ha tenido México, ubicado cerca de los Fuertes de Loreto y Guadalupe, donde defendió al país."));
 
+
+
         //Zoom de vista al mapa
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(catedral,16));
 
@@ -120,7 +123,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
                 @Override
                 public View getInfoContents(Marker marker) {
-                    View row = getLayoutInflater().inflate(R.layout.dialog_catedral, null);
+                    View row = getLayoutInflater().inflate(R.layout.dialog_map, null);
                     TextView t1_locality = (TextView)row.findViewById(R.id.locality);
                     TextView t2_snippet = (TextView)row.findViewById(R.id.snippet);
 
