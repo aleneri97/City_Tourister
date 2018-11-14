@@ -169,6 +169,33 @@ public class RoutesActivity extends AppCompatActivity implements OnMapReadyCallb
         LatLng rrr = new LatLng(19.0379,-98.1955);
 
         mMap.addPolyline(new PolylineOptions().add(a).add(b).add(c).add(d).add(e).add(f).add(g).add(h).add(i).add(j).add(k).add(l).add(m).add(n).add(o).add(p).add(q).add(r).add(s).add(t).add(u).add(v).add(w).add(x).add(y).add(z).add(aa).add(bb).add(cc).add(dd).add(ee).add(ff).add(gg).add(hh).add(ii).add(jj).add(kk).add(ll).add(mm).add(nn).add(oo).add(pp).add(qq).add(rr).add(ss).add(tt).add(uu).add(vv).add(yy).add(zz).add(aaa).add(bbb).add(ccc).add(ddd).add(eee).add(fff).add(ggg).add(hhh).add(iii).add(jjj).add(kkk).add(lll).add(mmm).add(nnn).add(ooo).add(ppp).add(qqq).add(rrr).width(10f).color(Color.BLUE));
+
+        LatLng ab = new LatLng(19.043612,-98.197284);
+        LatLng bc = new LatLng(19.042187,-98.198021);
+        LatLng cd = new LatLng(19.04295,-98.199537);
+        LatLng de = new LatLng(19.043638,-98.199084);
+        LatLng ef = new LatLng(19.048023,-98.207831);
+        LatLng fg = new LatLng(19.046659,-98.208567);
+        LatLng gh = new LatLng(19.054595,-98.224224);
+        LatLng hi = new LatLng(19.056041,-98.224339);
+        LatLng ij = new LatLng(19.057866,-98.225172);
+        LatLng jk = new LatLng(19.058541,-98.22674);
+        LatLng kl = new LatLng(19.058053,-98.23085);
+        LatLng lm = new LatLng(19.059698,-98.234425);
+        LatLng mn = new LatLng(19.060083,-98.295103);
+        LatLng no = new LatLng(19.062685,-98.296698);
+        LatLng op = new LatLng(19.059853,-98.302485);
+        LatLng pq = new LatLng(19.06192,-98.307022);
+        LatLng qr = new LatLng(19.049836,-98.31306);
+        LatLng rs = new LatLng(19.048598,-98.312327);
+        LatLng st = new LatLng(19.044679,-98.314992);
+        LatLng tu = new LatLng(19.035484,-98.316618);
+        LatLng uv = new LatLng(19.030297,-98.319994);
+        LatLng vw = new LatLng(19.022652,-98.309205);
+
+
+        mMap.addPolyline(new PolylineOptions().add(ab).add(bc).add(cd).add(de).add(ef).add(fg).add(gh).add(hi).add(ij).add(jk).add(kl).add(lm).add(mn).add(no).add(op).add(pq).add(qr).add(rs).add(st).add(tu).add(uv).add(vw).width(10f).color(Color.RED));
+
     }
 
     //Conexion de screen con botones

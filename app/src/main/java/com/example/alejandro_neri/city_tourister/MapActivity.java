@@ -106,8 +106,35 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         LatLng monumento_zaragoza = new LatLng(19.0605, -98.1846);
         mMap.addMarker(new MarkerOptions().position(monumento_zaragoza).title("Monumento a Zaragoza").icon(BitmapDescriptorFactory.fromResource(R.drawable.puntos_de_interes)).snippet("Es un mausoleo donde de descansan los restos de uno de los generales más importantes que ha tenido México, ubicado cerca de los Fuertes de Loreto y Guadalupe, donde defendió al país."));
 
+        //Cholula
+        //Catedral
+        //Paseo Bravo
+        LatLng paseo_bravo = new LatLng(19.046335, -98.208031);
+        mMap.addMarker(new MarkerOptions().position(paseo_bravo).title("Paseo Bravo").icon(BitmapDescriptorFactory.fromResource(R.drawable.recomendados)).snippet("El Paseo Bravo es un parque urbano ubicado en la ciudad de Puebla, en Puebla, México. Fue inaugurado en 1840 bajo el nombre de Paseo Nuevo y es considerado uno de los sitios emblemáticos de la capital poblana."));
 
+        //Avenida Juarez
+        LatLng av_juarez = new LatLng(19.051371, -98.217838);
+        mMap.addMarker(new MarkerOptions().position(av_juarez).title("Avenida Juarez").icon(BitmapDescriptorFactory.fromResource(R.drawable.recomendados)));
 
+        //Fuente de los angeles
+        LatLng fuente_angeles = new LatLng(19.05376, -98.222686);
+        mMap.addMarker(new MarkerOptions().position(fuente_angeles).title("Fuente de los angeles").icon(BitmapDescriptorFactory.fromResource(R.drawable.recomendados)).snippet("La fuente de San Miguel Arcángel fue construida por el arquitecto Juan Antonio de Santa María de Inchaúrregui. El artista contó con la colaboración de los maestro de talla de piedra Anselmo Martínez y José Francisco Rabanillo. Fue bendecida e inaugurada el 23 de junio de 1777."));
+
+        //Cerro de la Paz
+        LatLng cerro_paz = new LatLng(19.055793, -98.227637);
+        mMap.addMarker(new MarkerOptions().position(cerro_paz).title("Cerro de la Paz").icon(BitmapDescriptorFactory.fromResource(R.drawable.recomendados)));
+
+        //Centro Cholula
+        LatLng centro_cholula = new LatLng(19.061585, -98.306089);
+        mMap.addMarker(new MarkerOptions().position(centro_cholula).title("Centro Cholula").icon(BitmapDescriptorFactory.fromResource(R.drawable.recomendados)).snippet("Cholula es considerado un pueblo mágico por ser una de las localidades de México con mayores atributos simbólicos, historia, leyendas, tradición y arte; es una localidad que cuenta con innumerables manifestaciones socio culturales además de muchísima belleza."));
+
+        //Santa Maria Tonanzintla
+        LatLng sn_maria = new LatLng(19.030197, -98.319843);
+        mMap.addMarker(new MarkerOptions().position(sn_maria).title("Santa Maria Tonanzintla").icon(BitmapDescriptorFactory.fromResource(R.drawable.recomendados)).snippet("Es un mausoleo donde de descansan los restos de uno de los generales más importantes que ha tenido México, ubicado cerca de los Fuertes de Loreto y Guadalupe, donde defendió al país."));
+
+        //San Francisco Acatepec
+        LatLng acatepec = new LatLng(19.022831, -98.309259);
+        mMap.addMarker(new MarkerOptions().position(acatepec).title("San Francisco Acatepec").icon(BitmapDescriptorFactory.fromResource(R.drawable.recomendados)).snippet("Es un mausoleo donde de descansan los restos de uno de los generales más importantes que ha tenido México, ubicado cerca de los Fuertes de Loreto y Guadalupe, donde defendió al país."));
         //Zoom de vista al mapa
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(catedral,16));
 
