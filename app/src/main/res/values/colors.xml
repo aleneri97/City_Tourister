@@ -10,4 +10,5 @@
     <color name="dotsInactive">#808080</color>
     <color name="dotsActive">#F2F2F2</color>
     <color name="Blue">#515151</color>
+    <color name="MyTest">#515252</color>
 </resources>
