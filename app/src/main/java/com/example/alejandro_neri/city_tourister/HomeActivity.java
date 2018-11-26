@@ -23,6 +23,9 @@ public class HomeActivity extends AppCompatActivity
     //Imagenes mostradas en el carrusel
     int[] sampleImages = {R.drawable.puebla_fascinante,R.drawable.cholula_milenaria,R.drawable.casa_enanos};
 
+    private Button btn_seemore;
+    private int currentPage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,6 +99,10 @@ public class HomeActivity extends AppCompatActivity
     }
     public void ViewTickets(View view){
         Intent intent = new Intent(getApplicationContext(),TicketsActivity.class);
+        startActivity(intent);
+    }
+    public void ViewInfo(View view){
+        Intent intent = new Intent(getApplicationContext(),InfoActivity.class);
         startActivity(intent);
     }
 }

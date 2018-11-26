@@ -11,8 +11,8 @@
     <string name="title_activity_inicio">HomeActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Equipo Naranja</string>
-    <string name="nav_header_subtitle">equipo.naranja@icloud.com</string>
+    <string name="nav_header_title">Diego Castagne</string>
+    <string name="nav_header_subtitle">diego.castagne@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Herramientas</string>
     <string name="button_home">Inicio</string>
@@ -55,4 +55,6 @@
     <string name="stops_title">Paradas</string>
     <string name="stops_description"> Encuentra las paradas disponibles para bajar o subir de tu City Tourister®.</string>
     <string name="stops_description2">*No válido en temporada alta</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>
