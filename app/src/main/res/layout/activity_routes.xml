@@ -61,7 +61,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:onClick="ViewRoutes"
             android:text="@string/button_routes"
             android:textColor="@color/editTextColorWhite" />
 

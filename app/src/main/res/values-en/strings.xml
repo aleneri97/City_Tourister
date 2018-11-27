@@ -23,9 +23,6 @@
     <string name="title_activity_routes">RoutesActivity</string>
     <string name="title_activity_tickets">TicketsActivity</string>
 
-    <string name="my_preference">"com.abc.com.MyPref"</string>
-    <string name="my_preference_key">"com.abc.com.MyPref"</string>
-
     <string name="login_label">Sign In</string>
     <string name="signup_label">Sign Up</string>
     <string name="email_placeholder">Email</string>
@@ -49,7 +46,6 @@
     <string name="warning_signup_label">By clicking "Accept and Sign Up" you confirm that you have read the Privacy Policy and that you accept Our Service Conditions</string>
     <string name="register_accept_button">Accept and Sign Up</string>
 
-
     <string name="recommendations_title">Recommendations</string>
     <string name="recommendations_description">Find deals and exclusive discounts in restaurants, hotels, and more…</string>
     <string name="interestingPoints_title">Interesting</string>
@@ -68,9 +64,13 @@
     <string name="not_succesfull_signup_toast">Something wen\'t wrong… please try again.</string>
 
 
-
     <string name="login_api">https://api-estrella-roja.appspot.com/users/login</string>
     <string name="check_email_api">http://api-estrella-roja.appspot.com/users/checkEmail</string>
     <string name="signup_api">http://api-estrella-roja.appspot.com/users</string>
 
+    <string name="my_preference">"com.abc.com.MyPref"</string>
+    <string name="my_preference_key">"com.abc.com.MyPref"</string
+
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>
