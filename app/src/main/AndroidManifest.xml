@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- TODO: !!! Hacer que todas las vistas sean solamente verticales -->
+<!-- TODO: ! Hacer los Strings variables en los values -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.alejandro_neri.city_tourister">
 
@@ -10,7 +12,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,25 +21,17 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".HomeActivity"
-            android:label="Inicio">
-
-        </activity>
+            android:label="Inicio" />
         <activity
             android:name=".WelcomeActivity"
             android:label="Prueba"
             android:theme="@style/AppTheme" />
-
-        <activity android:name=".WizardActivity"></activity>
+        <activity android:name=".WizardActivity" />
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -46,16 +39,26 @@
 
         <activity
             android:name=".MapActivity"
-            android:label="Mapa"/>
+            android:label="Mapa" />
         <activity
             android:name=".RoutesActivity"
-            android:label="Rutas"/>
+            android:label="Rutas" />
         <activity
             android:name=".TicketsActivity"
-            android:label="Boletos">
+            android:label="Boletos" />
+        <activity android:name=".RegisterFirstActivity" />
+        <activity android:name=".RegisterSecondActivity" />
+        <activity android:name=".PurchaseStep1Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".RegisterFirstActivity"></activity>
-        <activity android:name=".RegisterSecondActivity"></activity>
+        <activity android:name=".PurchaseStep2Activity" />
+        <activity android:name=".PurchaseStep3Activity" />
+        <activity android:name=".PurchaseStep4Activity" />
+        <activity android:name=".PurchaseStep5Activity"></activity>
     </application>
 
 </manifest>

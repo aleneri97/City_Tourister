@@ -1,5 +1,8 @@
 package com.example.alejandro_neri.city_tourister;
 
+// TODO: !!! Hacer login con redes sociales
+// TODO: !! Implementar  goToMain(), la parte de que no puede regresar a este activity
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -56,19 +59,12 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-
-        /*btnSignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                goRegister(btnSignup);
-            }
-        });*/
     }
 
     // 2. Este método traerá los elementos de nuestra interfaz (XML), para que los podamos usar en el código
     private void bindUI(){
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
-        editTextPassword = (EditText) findViewById(R.id.editTextZipCode);
+        editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         btnLogin = (Button) findViewById(R.id.buttonLogin);
         btnSignup = (Button) findViewById(R.id.buttonSignup);
     }
@@ -88,10 +84,10 @@ public class LoginActivity extends AppCompatActivity {
     // este método verifica que el correo y la contraeña sean válidas, solo en ese caso regresa true, de otro modo manda un toast y false
     private boolean login(String email, String password){
         if (!isValidEmail(email)){
-            Toast.makeText(this, "The email is not a valid one", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.not_valid_email_toast, Toast.LENGTH_LONG).show();
             return false;
         } else if (!isValidPassword(password)){
-            Toast.makeText(this, "The email requires al least 5 characters", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.not_valid_password_toast, Toast.LENGTH_SHORT).show();
             return false;
         } else
             return true;
@@ -157,11 +153,11 @@ public class LoginActivity extends AppCompatActivity {
 
                 int responseCode = conn.getResponseCode();
                 if (responseCode == HttpURLConnection.HTTP_OK) {
-                    response.append("Bienvenido");
+                    response.append(R.string.valid_login_toast );
                     Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                     startActivity(intent);
                 }else
-                    response.append("Correo o contraseña incorrectos");
+                    response.append(R.string.not_valid_login_toast);
 
             } catch (Exception e){
                 e.printStackTrace();
@@ -196,7 +192,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void doLogin(View v) {
-        new LoginManager().execute("https://api-estrella-roja.appspot.com/users/login", editTextEmail.getText().toString(), editTextPassword.getText().toString());
+        new LoginManager().execute(String.valueOf(R.string.login_api), editTextEmail.getText().toString(), editTextPassword.getText().toString());
     }
 
     public void goRegister(View v){

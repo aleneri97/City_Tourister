@@ -1,5 +1,8 @@
 package com.example.alejandro_neri.city_tourister;
 
+// TODO: ! Validación desde front de los inputs
+// TODO: !! Implementar goToMain() de Login, en el sentido de que hay que hacer que no se pued regresar a esta pantalla
+
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -39,7 +42,7 @@ public class RegisterSecondActivity extends AppCompatActivity {
         email = (EditText)findViewById(R.id.editTextEmail);
         password = (EditText)findViewById(R.id.editTextPassword);
         phone_number = (EditText)findViewById(R.id.editTextPhoneNumber);
-        postal_code = (EditText)findViewById(R.id.editTextZipCode);
+        postal_code = (EditText)findViewById(R.id.editTextPostalCode);
         brithdate = (EditText)findViewById(R.id.editTextBirthdate);
 
         name.setText(getIntent().getExtras().getString("Name"));
@@ -82,11 +85,11 @@ public class RegisterSecondActivity extends AppCompatActivity {
 
                 int responseCode = conn.getResponseCode();
                 if (responseCode == HttpURLConnection.HTTP_OK) {
-                    response.append("Usuario Registrado con exito");
+                    response.append(R.string.succesfull_signup_toast);
                     Intent intent = new Intent(RegisterSecondActivity.this, LoginActivity.class);
                     startActivity(intent);
                 }else
-                    response.append("Algo salió mal con el registro");
+                    response.append("");
 
             } catch (Exception e){
                 e.printStackTrace();
@@ -122,6 +125,6 @@ public class RegisterSecondActivity extends AppCompatActivity {
     }
 
     public void doRegister(View v) {
-        new RegisterSecondActivity.RegisterManager().execute("http://api-estrella-roja.appspot.com/users", name.getText().toString(), last_name.getText().toString(), email.getText().toString(), brithdate.getText().toString(), password.getText().toString(), postal_code.getText().toString(), phone_number.getText().toString());
+        new RegisterSecondActivity.RegisterManager().execute(String.valueOf(R.string.signup_api), name.getText().toString(), last_name.getText().toString(), email.getText().toString(), brithdate.getText().toString(), password.getText().toString(), postal_code.getText().toString(), phone_number.getText().toString());
     }
 }

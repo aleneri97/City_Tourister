@@ -1,5 +1,8 @@
 package com.example.alejandro_neri.city_tourister;
 
+// TODO: !! Implementar redes sociales
+// TODO: ! Validación desde front de los inputs<
+
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
@@ -29,6 +32,12 @@ public class RegisterFirstActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_first);
 
+        bindUi();
+
+
+    }
+
+    private void bindUi() {
         email = (EditText)findViewById(R.id.editTextEmail);
         name = (EditText)findViewById(R.id.editTextName);
         last_name = (EditText)findViewById(R.id.editTextLastName);
@@ -62,14 +71,14 @@ public class RegisterFirstActivity extends AppCompatActivity {
 
                 int responseCode = conn.getResponseCode();
                 if (responseCode == HttpURLConnection.HTTP_OK) {
-                    response.append("Complete su registro");
+                    response.append(R.string.valid_signup_mail);
                     Intent intent = new Intent(RegisterFirstActivity.this, RegisterSecondActivity.class);
                     intent.putExtra("Name", name.getText().toString());
                     intent.putExtra("LastName", last_name.getText().toString());
                     intent.putExtra("Email", email.getText().toString());
                     startActivity(intent);
                 }else
-                    response.append("El correo ya existe");
+                    response.append(R.string.mail_exists_toast);
 
             } catch (Exception e){
                 e.printStackTrace();
@@ -105,6 +114,6 @@ public class RegisterFirstActivity extends AppCompatActivity {
     }
 
     public void doRegister(View v) {
-        new RegisterFirstActivity.RegisterManager().execute("http://api-estrella-roja.appspot.com/users/checkEmail", email.getText().toString());
+        new RegisterFirstActivity.RegisterManager().execute(String.valueOf(R.string.check_email_api), email.getText().toString());
     }
 }

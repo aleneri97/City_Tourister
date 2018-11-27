@@ -1,5 +1,7 @@
 package com.example.alejandro_neri.city_tourister;
 
+//TODO: !! Hacer con SharedPreferences que si ya inició sesión, que lo mande al Home, si ya llegaron al menos una vez al login, la próxima vez, si no inició sesión, lo manda directo al Login
+
 
 import android.content.Context;
 import android.content.Intent;
