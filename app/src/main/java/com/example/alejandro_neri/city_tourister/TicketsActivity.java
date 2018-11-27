@@ -21,33 +21,27 @@ public class TicketsActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle("Boletos");
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Comprando boleto", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
     }
 
     //Conexion de screen con botones
     public void ViewHome(View view){
         Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
+        finish();
         startActivity(intent);
     }
     public void ViewMap(View view){
         Intent intent = new Intent(getApplicationContext(),MapActivity.class);
+        finish();
         startActivity(intent);
     }
     public void ViewRoutes(View view){
         Intent intent = new Intent(getApplicationContext(),RoutesActivity.class);
+        finish();
         startActivity(intent);
     }
     public void ViewTickets(View view){
         Intent intent = new Intent(getApplicationContext(),TicketsActivity.class);
+        finish();
         startActivity(intent);
     }
 }

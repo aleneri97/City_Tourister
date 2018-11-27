@@ -74,23 +74,28 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:onClick="ViewTickets"
             android:text="@string/button_tickets"
             android:textColor="@color/editTextColorWhite" />
     </LinearLayout>
 
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="58dp"
-        android:layout_height="53dp"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="@dimen/fab_margin"
-        android:layout_marginEnd="14dp"
-        app:backgroundTint="@color/colorPrimary"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/cabin_bold"
+        android:text="Comprar Boletos"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add" />
-
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

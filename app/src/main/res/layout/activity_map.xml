@@ -52,7 +52,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/colorPrimary"
-            android:onClick="ViewMap"
             android:text="@string/button_map"
             android:textColor="@color/editTextColorWhite" />
 

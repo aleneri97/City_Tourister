@@ -10,7 +10,7 @@
         android:id="@+id/imageView2"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:src="@drawable/catedral_de_puebla"
+        android:src="@drawable/catedralpuebla"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"

@@ -3,6 +3,8 @@ package com.example.alejandro_neri.city_tourister;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -10,6 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -47,8 +51,11 @@ public class HomeActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
     }
 
     //Barra lateral
@@ -67,10 +74,32 @@ public class HomeActivity extends AppCompatActivity
         // Manejo de navegacion de los items con tap
         int id = item.getItemId();
 
-        if (id == R.id.nav_terminosycondiciones) { }
-        else if (id == R.id.nav_avisodeprivacidad) { }
-        else if (id == R.id.nav_contactanos) { }
-        else if (id == R.id.nav_actualizaciones) { }
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
+        if (id == R.id.nav_newticket) {
+            Intent intent = new Intent(getApplicationContext(),TicketsActivity.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.nav_changepassword) {
+
+        }
+        else if (id == R.id.nav_billing) {
+            Intent intent = new Intent(getApplicationContext(),BillingActivity.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.nav_noticeofprivacy) {
+            Intent intent = new Intent(getApplicationContext(),PolicyActivity.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.nav_termsandconditions) {
+            Intent intent = new Intent(getApplicationContext(),TermsAndConditionsActivity.class);
+            startActivity(intent);
+        }
+        else if (id == R.id.nav_logoff) {
+            Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+            startActivity(intent);
+        }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -102,7 +131,7 @@ public class HomeActivity extends AppCompatActivity
         startActivity(intent);
     }
     public void ViewInfo(View view){
-        Intent intent = new Intent(getApplicationContext(),InfoActivity.class);
+        Intent intent = new Intent(getApplicationContext(),Info_Puebla.class);
         startActivity(intent);
     }
 }

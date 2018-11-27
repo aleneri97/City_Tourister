@@ -2,6 +2,7 @@ package com.example.alejandro_neri.city_tourister;
 
 
 import android.content.Intent;
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
@@ -14,7 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class InfoActivity extends AppCompatActivity {
+public class Info_Puebla extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -43,8 +44,15 @@ public class InfoActivity extends AppCompatActivity {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.container);
+        mViewPager = (ViewPager) findViewById(R.id.contenedor);
         mViewPager.setAdapter(mSectionsPagerAdapter);
+
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+
+        mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
+
+
     }
 
     /**
@@ -75,7 +83,18 @@ public class InfoActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_info, container, false);
+
+            View rootView = null;
+
+            switch(getArguments().getInt(ARG_SECTION_NUMBER)){
+                case 1:
+                    rootView = inflater.inflate(R.layout.fragment_info_puebla, container, false);
+                    break;
+
+                case 2:
+                    rootView = inflater.inflate(R.layout.fragment_info_cholula, container, false);
+                    break;
+            }
             return rootView;
         }
     }
@@ -111,6 +130,14 @@ public class InfoActivity extends AppCompatActivity {
     }
     public void ViewTickets(View view){
         Intent intent = new Intent(getApplicationContext(),TicketsActivity.class);
+        startActivity(intent);
+    }
+    public void ViewDetailPuebla(View view){
+        Intent intent = new Intent(getApplicationContext(),DetailPueblaActivity.class);
+        startActivity(intent);
+    }
+    public void ViewDetailCholula(View view){
+        Intent intent = new Intent(getApplicationContext(),DetailCholulaActivity.class);
         startActivity(intent);
     }
 }

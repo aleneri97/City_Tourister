@@ -55,9 +55,14 @@
         <activity android:name=".RegisterFirstActivity" />
         <activity android:name=".RegisterSecondActivity" />
         <activity
-            android:name=".InfoActivity"
+            android:name=".Info_Puebla"
             android:label="@string/title_activity_info"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".DetailPueblaActivity" />
+        <activity android:name=".DetailCholulaActivity" />
+        <activity android:name=".BillingActivity" />
+        <activity android:name=".TermsAndConditionsActivity" />
+        <activity android:name=".PolicyActivity"></activity>
     </application>
 
 </manifest>

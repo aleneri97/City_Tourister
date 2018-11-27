@@ -5,21 +5,29 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_terminosycondiciones"
-            android:icon="@drawable/ic_description_black_24dp"
-            android:title="Términos y Condiciones" />
+            android:id="@+id/nav_newticket"
+            android:icon="@drawable/newticket"
+            android:title="Comprar Boleto" />
         <item
-            android:id="@+id/nav_avisodeprivacidad"
+            android:id="@+id/nav_changepassword"
+            android:icon="@drawable/newpassword"
+            android:title="Cambiar Contraseñas" />
+        <item
+            android:id="@+id/nav_billing"
+            android:icon="@drawable/billing"
+            android:title="Facturación" />
+        <item
+            android:id="@+id/nav_noticeofprivacy"
             android:icon="@drawable/ic_error_black_24dp"
             android:title="Aviso de Privacidad" />
         <item
-            android:id="@+id/nav_contactanos"
-            android:icon="@drawable/ic_forum_black_24dp"
-            android:title="Contáctanos" />
+            android:id="@+id/nav_termsandconditions"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="Términos y Condiciones" />
         <item
-            android:id="@+id/nav_actualizaciones"
-            android:icon="@drawable/ic_flag_black_24dp"
-            android:title="Actualizaciones" />
+            android:id="@+id/nav_logoff"
+            android:icon="@drawable/logoff"
+            android:title="Cerrar Sesión" />
     </group>
 
 </menu>

@@ -135,22 +135,15 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         //San Francisco Acatepec
         LatLng acatepec = new LatLng(19.022831, -98.309259);
         mMap.addMarker(new MarkerOptions().position(acatepec).title("San Francisco Acatepec").icon(BitmapDescriptorFactory.fromResource(R.drawable.recomendados)).snippet("Es un mausoleo donde de descansan los restos de uno de los generales más importantes que ha tenido México, ubicado cerca de los Fuertes de Loreto y Guadalupe, donde defendió al país."));
-        //Zoom de vista al mapa
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(catedral,16));
-
-        //Botones + y - en el mapa
-        mMap.getUiSettings().setZoomControlsEnabled(true);
 
         if(mMap!=null){
             mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
-                @Override
                 public View getInfoWindow(Marker marker) {
                     return null;
                 }
 
-                @Override
                 public View getInfoContents(Marker marker) {
-                    View row = getLayoutInflater().inflate(R.layout.dialog_map, null);
+                    View row = getLayoutInflater().inflate(R.layout.dialog_map_catedral, null);
                     TextView t1_locality = (TextView)row.findViewById(R.id.locality);
                     TextView t2_snippet = (TextView)row.findViewById(R.id.snippet);
 
@@ -161,6 +154,13 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                 }
             });
         }
+
+
+        //Zoom de vista al mapa
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(catedral,15));
+
+        //Botones + y - en el mapa
+        mMap.getUiSettings().setZoomControlsEnabled(true);
 
     }
 

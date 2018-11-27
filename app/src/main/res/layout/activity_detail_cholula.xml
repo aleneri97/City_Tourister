@@ -2,11 +2,9 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".Info_Puebla">
+    tools:context=".DetailCholulaActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -28,14 +26,14 @@
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="ViewHome"/>
+        android:onClick="ViewInfo"/>
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="Información"
+        android:text="Tour"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -43,38 +41,31 @@
         app:layout_constraintStart_toEndOf="@+id/btn_back"
         app:layout_constraintTop_toTopOf="@+id/toolbar2" />
 
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tabs"
-        android:layout_width="match_parent"
-        android:layout_height="46dp"
-        app:layout_constraintBottom_toTopOf="@+id/contenedor"
+    <Button
+        android:id="@+id/btn_map"
+        android:layout_width="329dp"
+        android:layout_height="219dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/viewroutes"
+        android:onClick="ViewRoutes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
 
-        <android.support.design.widget.TabItem
-            android:id="@+id/tabItem"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tab_text_1" />
-
-        <android.support.design.widget.TabItem
-            android:id="@+id/tabItem2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/tab_text_2" />
-
-    </android.support.design.widget.TabLayout>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/contenedor"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="348dp"
+        android:layout_height="348dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Contamos con el sistema “Hop on - Hop off” con paradas autorizadas, donde puedes subir y bajar las veces que quieras durante el día. Así tendrás el mejor recorrido por la “Cholula”. Al momento de realizar tu compra online te llegará tu boleto electrónico. Canjéalo por tu pulsera en nuestro modulo ubicado en las oficinas de Turismo del Zocalo, a un lado del palacio municipal. Nuestro recorrido empieza en el Zocalo de Puebla, donde aparte de conocer esa zona tenias acceso a nuestro autobús City Tourister para realizar el resto de tu recorrido. Para que aplique la modalidad de “subir y bajar” (“Hop on - Hop off”), deberás portar la pulsera en tu muñeca en todo momento. Sin ella, o si esta presenta alteraciones, no podrás volver a abordar."
+        android:textColor="@color/Gray"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabs" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_map" />
 
 </android.support.constraint.ConstraintLayout>
