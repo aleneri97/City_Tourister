@@ -22,39 +22,55 @@
     <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_routes">RoutesActivity</string>
     <string name="title_activity_tickets">TicketsActivity</string>
-    <string name="my_preference">"com.abc.com.MyPref"</string>
-    <string name="my_preference_key">"com.abc.com.MyPref"</string>
 
-    <string name="login_label">Log in</string>
-    <string name="signup_label">Register</string>
-    <string name="email_placeholder">E-mail</string>
+    <string name="login_label">Sign In</string>
+    <string name="signup_label">Sign Up</string>
+    <string name="email_placeholder">Email</string>
     <string name="password_placeholder">Password</string>
     <string name="enter_button">Enter</string>
-    <string name="remember_me_switch_label">Remember me</string>
-    <string name="social_networks_login_label">Or conect with social media</string>
-    <string name="no_account_yet_label">¿Need an account?</string>
-    <string name="signup_button">Register</string>
-    <string name="social_networks_signup_label">Register with a social media</string>
+    <string name="remember_me_switch_label">Remember Me</string>
+    <string name="social_networks_login_label">Or Log In using your social networks</string>
+    <string name="no_account_yet_label">No account yet?</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="social_networks_signup_label">Sign Up using social networks</string>
     <string name="name_placeholder">Name</string>
-    <string name="lastname_placeholder">Last name</string>
-    <string name="warning_email_notification_label">We will send you an e-mail with offers and updates about our politics and user terms.</string>
-    <string name="no_spam_switch_label">I do not want to recieve e-mails and promotions about City Tourister.</string>
+    <string name="lastname_placeholder">Last Name</string>
+    <string name="warning_email_notification_label">We\'ll send you promos, offers and updates of our policies through your email.</string>
+    <string name="no_spam_switch_label">I don\'t want to receive ads nor promos from City Tourister</string>
     <string name="next_button">Next</string>
-    <string name="create_account_label">Create account</string>
-    <string name="birthday_placeholder">Date birth</string>
-    <string name="zip_placeholder">Código postal</string>
-    <string name="phone_placeholder">Telephone number</string>
-    <string name="confirm_password_label">Confirm password</string>
-    <string name="warning_signup_label">Touching "Accept and register" you confirm that you read Politics of privacy and you accept our Terms and Conditions.</string>
-    <string name="register_accept_button">Accept and register</string>
+    <string name="create_account_label">Create your account</string>
+    <string name="birthday_placeholder">Birthday</string>
+    <string name="zip_placeholder">Zip Code</string>
+    <string name="phone_placeholder">Phone Number</string>
+    <string name="confirm_password_label">Confirm Password</string>
+    <string name="warning_signup_label">By clicking "Accept and Sign Up" you confirm that you have read the Privacy Policy and that you accept Our Service Conditions</string>
+    <string name="register_accept_button">Accept and Sign Up</string>
 
-    <string name="recommendations_title">Recomendations</string>
-    <string name="recommendations_description">Found exclusive discounts in restaurants, hotels, museums and more.</string>
-    <string name="interestingPoints_title">Puntos de interés</string>
-    <string name="interestingPoints_description">Explore the most popular touristic places on the interactive map.</string>
+    <string name="recommendations_title">Recommendations</string>
+    <string name="recommendations_description">Find deals and exclusive discounts in restaurants, hotels, and more…</string>
+    <string name="interestingPoints_title">Interesting</string>
+    <string name="interestingPoints_description">Explore the most relevant touristic places right within the interactive map.</string>
     <string name="stops_title">Stops</string>
-    <string name="stops_description">Found the available stops to hop off or hop on of the City Tourister®.</string>
-    <string name="stops_description2">*Not valid on high season</string>
+    <string name="stops_description"> Find the stops available to hop-in or hop-out from your City Tourister®.</string>
+    <string name="stops_description2">*Not valid un high season</string>
+
+    <string name="not_valid_email_toast">The email is not a valid one</string>
+    <string name="not_valid_password_toast">The email requires al least 5 characters</string>
+    <string name="not_valid_login_toast">Email or password incorrect</string>
+    <string name="valid_login_toast">Welcome</string>
+    <string name="mail_exists_toast">Email already exists</string>
+    <string name="valid_signup_mail">Complete your Sign Up</string>
+    <string name="succesfull_signup_toast">Successfully Signed Up</string>
+    <string name="not_succesfull_signup_toast">Something wen\'t wrong… please try again.</string>
+
+
+    <string name="login_api">https://api-estrella-roja.appspot.com/users/login</string>
+    <string name="check_email_api">http://api-estrella-roja.appspot.com/users/checkEmail</string>
+    <string name="signup_api">http://api-estrella-roja.appspot.com/users</string>
+
+    <string name="my_preference">"com.abc.com.MyPref"</string>
+    <string name="my_preference_key">"com.abc.com.MyPref"</string
+
     <string name="title_activity_info">InfoActivity</string>
     <string name="section_format">Hello World from section: %1$d</string>
 </resources>

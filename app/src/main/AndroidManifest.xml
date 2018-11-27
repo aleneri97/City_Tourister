@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- TODO: !!! Hacer que todas las vistas sean solamente verticales -->
+<!-- TODO: ! Hacer los Strings variables en los values -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.alejandro_neri.city_tourister">
 
@@ -28,7 +30,7 @@
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
-            <intent-filter>
+          <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -54,6 +56,13 @@
             android:label="Boletos" />
         <activity android:name=".RegisterFirstActivity" />
         <activity android:name=".RegisterSecondActivity" />
+
+        <activity android:name=".PurchaseStep1Activity">
+        </activity>
+        <activity android:name=".PurchaseStep2Activity" />
+        <activity android:name=".PurchaseStep3Activity" />
+        <activity android:name=".PurchaseStep4Activity" />
+        <activity android:name=".PurchaseStep5Activity"></activity>
         <activity
             android:name=".Info_Puebla"
             android:label="@string/title_activity_info"

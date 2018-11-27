@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--TODO: ! Poner estilos-->
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -47,7 +48,7 @@
         android:ems="10"
         android:hint="Fecha de Nacimiento"
         android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/editTextZipCode"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +56,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextZipCode"
+        android:id="@+id/editTextPostalCode"
         android:layout_width="319dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

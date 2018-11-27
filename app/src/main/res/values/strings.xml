@@ -58,9 +58,26 @@
     <string name="stops_title">Paradas</string>
     <string name="stops_description"> Encuentra las paradas disponibles para bajar o subir de tu City Tourister®.</string>
     <string name="stops_description2">*No válido en temporada alta</string>
+
+
+    <string name="not_valid_email_toast">El email no es válido</string>
+    <string name="not_valid_password_toast">El correo requiere al menos </string>
+    <string name="not_valid_login_toast">Email or password incorrect</string>
+    <string name="valid_login_toast">Welcome</string>
+    <string name="mail_exists_toast">Email already exists</string>
+    <string name="valid_signup_mail">Complete your Sign Up</string>
+    <string name="succesfull_signup_toast">Successfully Signed Up</string>
+
+
+    <string name="not_succesfull_signup_toast">Something wen\'t wrong… please try again.</string>
+    <string name="login_api">https://api-estrella-roja.appspot.com/users/login</string>
+    <string name="check_email_api">http://api-estrella-roja.appspot.com/users/checkEmail</string>
+    <string name="signup_api">http://api-estrella-roja.appspot.com/users</string>
+
     <string name="title_activity_info">InfoActivity</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
