@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#013764</color>
-    <color name="colorPrimaryDark">#8d1cabbb</color>
-    <color name="colorAccent">#d81b60</color>
+    <color name="colorPrimary">#1a375e</color>
+    <color name="colorPrimaryDark">#001134</color>
+    <color name="colorAccent">#72d0eb</color>
+
     <color name="editTextColorWhite">#ffffff</color>
 
-    <color name="Gray">#1b1b1b</color>
+    <color name="Gray">#737373</color>
 
     <color name="dotsInactive">#808080</color>
     <color name="dotsActive">#F2F2F2</color>
     <color name="Blue">#515151</color>
+    <color name="MyTest">#d13bdc</color>
+    <color name="colorSecondary">#303F9F</color>
 </resources>

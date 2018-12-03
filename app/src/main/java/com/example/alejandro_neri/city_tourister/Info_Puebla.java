@@ -128,8 +128,8 @@ public class Info_Puebla extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),HomeActivity.class);
         startActivity(intent);
     }
-    public void ViewTickets(View view){
-        Intent intent = new Intent(getApplicationContext(),TicketsActivity.class);
+    public void BuyTickets(View view){
+        Intent intent = new Intent(getApplicationContext(),PurchaseStep1Activity.class);
         startActivity(intent);
     }
     public void ViewDetailPuebla(View view){

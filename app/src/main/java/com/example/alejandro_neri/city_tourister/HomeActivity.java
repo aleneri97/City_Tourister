@@ -77,7 +77,7 @@ public class HomeActivity extends AppCompatActivity
         FragmentManager fragmentManager = getSupportFragmentManager();
 
         if (id == R.id.nav_newticket) {
-            Intent intent = new Intent(getApplicationContext(),TicketsActivity.class);
+            Intent intent = new Intent(getApplicationContext(),PurchaseStep1Activity.class);
             startActivity(intent);
         }
         else if (id == R.id.nav_changepassword) {
@@ -128,6 +128,11 @@ public class HomeActivity extends AppCompatActivity
     }
     public void ViewTickets(View view){
         Intent intent = new Intent(getApplicationContext(),TicketsActivity.class);
+        finish();
+        startActivity(intent);
+    }
+    public void BuyTickets(View view){
+        Intent intent = new Intent(getApplicationContext(),PurchaseStep1Activity.class);
         startActivity(intent);
     }
     public void ViewInfo(View view){

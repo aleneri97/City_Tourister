@@ -73,7 +73,7 @@
         <com.synnapps.carouselview.CarouselView
             android:id="@+id/carouselView"
             android:layout_width="421dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             app:autoPlay="true"
             app:fillColor="@color/colorPrimary"
             app:pageColor="@color/editTextColorWhite"
@@ -86,10 +86,10 @@
                 android:id="@+id/seemore"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="305dp"
+                android:layout_marginLeft="250dp"
                 android:layout_marginTop="175dp"
                 android:layout_marginBottom="1dp"
-                android:background="@color/colorPrimaryDark"
+                android:background="@color/colorAccent"
                 android:clickable="false"
                 android:onClick="ViewInfo"
                 android:text="Ver mas"
@@ -106,7 +106,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="162dp"
-        android:background="@color/colorPrimaryDark">
+        android:background="@color/colorAccent">
 
         <TextView
             android:id="@+id/textView5"
@@ -139,7 +139,7 @@
 
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="356dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
@@ -169,14 +169,14 @@
         <Button
             android:id="@+id/button"
             android:layout_width="331dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_below="@+id/textView11"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:background="@color/colorPrimaryDark"
+            android:background="@color/colorAccent"
             android:fontFamily="@font/cabin_bold"
-            android:onClick="ViewTickets"
+            android:onClick="BuyTickets"
             android:text="Comprar Boletos"
             android:textAllCaps="false"
             android:textColor="@android:color/white"

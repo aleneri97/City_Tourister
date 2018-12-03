@@ -44,4 +44,8 @@ public class TicketsActivity extends AppCompatActivity {
         finish();
         startActivity(intent);
     }
+    public void BuyTickets(View view){
+        Intent intent = new Intent(getApplicationContext(),PurchaseStep1Activity.class);
+        startActivity(intent);
+    }
 }

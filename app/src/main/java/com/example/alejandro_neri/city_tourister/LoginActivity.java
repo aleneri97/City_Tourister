@@ -23,6 +23,15 @@ import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
+import com.facebook.login.LoginManager;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
+
 public class LoginActivity extends AppCompatActivity {
 
     // 1. Declaramos las variables que necesitaremos
@@ -31,11 +40,46 @@ public class LoginActivity extends AppCompatActivity {
     private Button btnLogin;
     private SharedPreferences preferences;
     private Button btnSignup;
+    private CallbackManager callbackManager;
+    private LoginButton loginButton;
+    private static final String EMAIL = "email";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        //Facebook Log in
+        FacebookSdk.sdkInitialize(getApplicationContext());
+        AppEventsLogger.activateApp(this);
+
+        //Crea un administrador de devolución de llamadas que se encargue de las respuestas del inicio de sesión llamando a CallbackManager.Factory.create.
+        callbackManager = CallbackManager.Factory.create();
+
+        //Propiedades de Log in Button
+        loginButton = (LoginButton) findViewById(R.id.login_button);
+        loginButton.setReadPermissions("email");
+
+        // Callback registro
+        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                Toast.makeText(LoginActivity.this, "Se pudo!", Toast.LENGTH_SHORT).show();
+                Intent intentHome = new Intent(getApplicationContext(), HomeActivity.class);
+                intentHome.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intentHome);
+            }
+
+            @Override
+            public void onCancel() {
+                Toast.makeText(LoginActivity.this, "Se canceló!", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onError(FacebookException exception) {
+                Toast.makeText(LoginActivity.this, "Vaya hubo un error" +
+                        "!", Toast.LENGTH_SHORT).show();            }
+        });
 
         preferences = getSharedPreferences("preferences", Context.MODE_PRIVATE);
 
@@ -125,9 +169,7 @@ public class LoginActivity extends AppCompatActivity {
             // este se usaría si necesitaramos que no haga nada hasta que guardara todas las llaves y valores
             //editor.commit();
             editor.apply();
-
     }
-
 
     private class LoginManager extends AsyncTask<String, Void, String> {
 
@@ -159,6 +201,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (responseCode == HttpURLConnection.HTTP_OK) {
                     response.append("Bienvenido");
                     Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(intent);
                 }else
                     response.append("Correo o contraseña incorrectos");
@@ -202,6 +245,12 @@ public class LoginActivity extends AppCompatActivity {
     public void goRegister(View v){
         Intent intent = new Intent(this, RegisterFirstActivity.class);
         startActivity(intent);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        callbackManager.onActivityResult(requestCode, resultCode, data);
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
 }
