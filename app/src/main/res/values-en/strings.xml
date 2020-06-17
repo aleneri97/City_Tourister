@@ -15,8 +15,63 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-    <string name="boton_inicio">Home</string>
-    <string name="boton_mapa">Map</string>
-    <string name="boton_rutas">Routes</string>
-    <string name="boton_boletos">Tickets</string>
+    <string name="button_home">Home</string>
+    <string name="button_map">Map</string>
+    <string name="button_routes">Routes</string>
+    <string name="button_tickets">Tickets</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_routes">RoutesActivity</string>
+    <string name="title_activity_tickets">TicketsActivity</string>
+
+    <string name="login_label">Sign In</string>
+    <string name="signup_label">Sign Up</string>
+    <string name="email_placeholder">Email</string>
+    <string name="password_placeholder">Password</string>
+    <string name="enter_button">Enter</string>
+    <string name="remember_me_switch_label">Remember Me</string>
+    <string name="social_networks_login_label">Or Log In using your social networks</string>
+    <string name="no_account_yet_label">No account yet?</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="social_networks_signup_label">Sign Up using social networks</string>
+    <string name="name_placeholder">Name</string>
+    <string name="lastname_placeholder">Last Name</string>
+    <string name="warning_email_notification_label">We\'ll send you promos, offers and updates of our policies through your email.</string>
+    <string name="no_spam_switch_label">I don\'t want to receive ads nor promos from City Tourister</string>
+    <string name="next_button">Next</string>
+    <string name="create_account_label">Create your account</string>
+    <string name="birthday_placeholder">Birthday</string>
+    <string name="zip_placeholder">Zip Code</string>
+    <string name="phone_placeholder">Phone Number</string>
+    <string name="confirm_password_label">Confirm Password</string>
+    <string name="warning_signup_label">By clicking "Accept and Sign Up" you confirm that you have read the Privacy Policy and that you accept Our Service Conditions</string>
+    <string name="register_accept_button">Accept and Sign Up</string>
+
+    <string name="recommendations_title">Recommendations</string>
+    <string name="recommendations_description">Find deals and exclusive discounts in restaurants, hotels, and more…</string>
+    <string name="interestingPoints_title">Interesting</string>
+    <string name="interestingPoints_description">Explore the most relevant touristic places right within the interactive map.</string>
+    <string name="stops_title">Stops</string>
+    <string name="stops_description"> Find the stops available to hop-in or hop-out from your City Tourister®.</string>
+    <string name="stops_description2">*Not valid un high season</string>
+
+    <string name="not_valid_email_toast">The email is not a valid one</string>
+    <string name="not_valid_password_toast">The email requires al least 5 characters</string>
+    <string name="not_valid_login_toast">Email or password incorrect</string>
+    <string name="valid_login_toast">Welcome</string>
+    <string name="mail_exists_toast">Email already exists</string>
+    <string name="valid_signup_mail">Complete your Sign Up</string>
+    <string name="succesfull_signup_toast">Successfully Signed Up</string>
+    <string name="not_succesfull_signup_toast">Something wen\'t wrong… please try again.</string>
+
+
+    <string name="login_api">https://api-estrella-roja.appspot.com/users/login</string>
+    <string name="check_email_api">http://api-estrella-roja.appspot.com/users/checkEmail</string>
+    <string name="signup_api">http://api-estrella-roja.appspot.com/users</string>
+
+    <string name="my_preference">"com.abc.com.MyPref"</string>
+    <string name="my_preference_key">"com.abc.com.MyPref"</string>
+
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
 </resources>

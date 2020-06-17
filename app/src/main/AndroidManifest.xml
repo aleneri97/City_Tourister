@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- TODO: !!! Hacer que todas las vistas sean solamente verticales -->
+<!-- TODO: ! Hacer los Strings variables en los values -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.alejandro_neri.city_tourister">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -10,18 +20,71 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".InicioActivity"
-            android:label="Inicio">
-            <intent-filter>
+            android:name=".HomeActivity"
+            android:label="Inicio" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="Prueba"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".WizardActivity" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+          <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".LoginActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity" android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:label="@string/app_name" />
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+
+
         <activity
-            android:name=".Welcome"
-            android:label="@string/title_activity_inicio"
-            android:theme="@style/AppTheme"></activity>
+            android:name=".MapActivity"
+            android:label="Mapa" />
+        <activity
+            android:name=".RoutesActivity"
+            android:label="Rutas" />
+        <activity
+            android:name=".TicketsActivity"
+            android:label="Boletos" />
+        <activity android:name=".RegisterFirstActivity" />
+        <activity android:name=".RegisterSecondActivity" />
+
+        <activity android:name=".PurchaseStep1Activity"></activity>
+        <activity android:name=".PurchaseStep2Activity" />
+        <activity android:name=".PurchaseStep3Activity" />
+        <activity android:name=".PurchaseStep4Activity" />
+        <activity android:name=".PurchaseStep5Activity"></activity>
+        <activity
+            android:name=".Info_Puebla"
+            android:label="@string/title_activity_info"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".DetailPueblaActivity" />
+        <activity android:name=".DetailCholulaActivity" />
+        <activity android:name=".BillingActivity" />
+        <activity android:name=".TermsAndConditionsActivity" />
+        <activity android:name=".PolicyActivity"></activity>
     </application>
 
 </manifest>

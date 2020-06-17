@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btn_Inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="@string/button_home"
+            android:textColor="@color/editTextColorWhite" />
+
+        <Button
+            android:id="@+id/btn_Mapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="ViewMap"
+            android:text="@string/button_map"
+            android:textColor="@color/editTextColorWhite" />
+
+        <Button
+            android:id="@+id/btn_Rutas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="ViewRoutes"
+            android:text="@string/button_routes"
+            android:textColor="@color/editTextColorWhite" />
+
+        <Button
+            android:id="@+id/btn_Boletos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:onClick="ViewTickets"
+            android:text="@string/button_tickets"
+            android:textColor="@color/editTextColorWhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="vertical">
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="421dp"
+            android:layout_height="wrap_content"
+            app:autoPlay="true"
+            app:fillColor="@color/colorPrimary"
+            app:pageColor="@color/editTextColorWhite"
+            app:radius="6dp"
+            app:slideInterval="3000"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="1dp">
+
+            <Button
+                android:id="@+id/seemore"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="175dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/colorAccent"
+                android:clickable="false"
+                android:onClick="ViewInfo"
+                android:text="Ver mas"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </com.synnapps.carouselview.CarouselView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="326dp"
+        android:layout_height="86dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="162dp"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/textView5"
+            android:layout_centerHorizontal="true"
+            android:text="Registra tu pulsera"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="11dp"
+            android:background="@android:color/white"
+            android:ems="14"
+            android:hint="Numero de pulsera"
+            android:inputType="number"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColorLink="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="43dp"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="368dp">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="¿Aún no tienes boletos?"
+            android:textColor="@color/Gray"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.333" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="331dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/textView11"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="@font/cabin_bold"
+            android:onClick="BuyTickets"
+            android:text="Comprar Boletos"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>
